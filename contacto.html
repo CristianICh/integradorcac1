@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel&family=Jost:ital,wght@1,200&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+
+            <span id="top-nav">OCTUBRE 10% DE DESCUENTO</span>
+            <span id="top-nav">3 CUOTAS SIN INTERES</span>
+        </div>
+        <div class="header-main">
+            <a href="#" class="enlace">
+                <img src="imagenes/logotransparente.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+
+            </ul>
+
+        </div>
+
+    </header>
+    <main>
+        <section class="main-s">
+
+            <form novalidate action="https://formspree.io/f/xleybkpl" method="post" onsubmit="return validarFormulario()" >
+
+                <div id="div-form">
+                    <label for="nombre" class="nombre">Primer Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" >
+                </div>
+                <div id="div-form">
+                    <label for="apellido" class="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+                <div id="div-form">
+                    <label for="email" class="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                </div>
+                <div id="div-form">
+                    <label for="comentario">Comentario:</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10"
+                        placeholder="Escriba un comentario"></textarea>
+
+
+                    <input type="submit" value="Enviar" id="submit">
+                </div>
+
+            </form>
+
+
+        </section>
+        <a href="" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
+    </main>
+    <footer>
+        <section class="f-s1">
+            <div id="f-nav">
+                <h4 id="navega-contacta-mediosP-envio">Navegacion</h4>
+                <a href=""> <span id="f-s1-nav">Inicio</span></a>
+                <a href=""> <span id="f-s1-nav">Productos</span></a>
+                <a href=""> <span id="f-s1-nav">Contacto</span></a>
+                <a href=""> <span id="f-s1-nav">Quienes Somos</span></a>
+            </div>
+            <hr>
+            <h4 id="navega-contacta-mediosP-envio">Contactanos</h4>
+            <i class="fa-brands fa-whatsapp " style="color: aliceblue;"><span>+54381123445</span></i>
+
+        </section>
+        <section class="f-s2">
+            <img src="imagenes/amapola-high-resolution-logo-white-on-transparent-background.png" alt="">
+            <div id="f-d">
+                <h2 id="seguinos">Seguinos</h2>
+                <div id="redess">
+                    <a href="#" class="redes"><i class="fa-brands fa-linkedin-in" id="redesS"></i></a>
+                    <a href="#" class="redes"><i class="fa-brands fa-facebook-f" id="redesS"></i></a>
+                    <a href="#" class="redes"> <i class="fa-brands fa-instagram" id="redesS"></i></a>
+                    <a href="#" class="redes"><i class="fa-brands fa-tiktok" id="redesS"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="f-s3">
+            <h4 id="navega-contacta-mediosP-envio">Medios de Pago</h4>
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/mastercard@2x.png" alt="">
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/visa@2x.png" alt="">
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/banelco@2x.png" alt="">
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/cabal@2x.png" alt="">
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/cencosud@2x.png" alt="">
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/mercadopago@2x.png" alt="">
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/pagofacil@2x.png" alt="">
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/rapipago@2x.png" alt="">
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/tarjeta-naranja@2x.png" alt="">
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/tarjeta-shopping@2x.png" alt="">
+            <hr>
+            <h4 id="navega-contacta-mediosP-envio">Medios de Envio</h4>
+            <img src="imagenes/tarjetasCredito/3336-es_AR-small-andreani logo andreani.png" alt="" id="f-s3-i">
+
+            <img src="imagenes/tarjetasCredito/1200x630wa.png" alt="" id="f-s3-i">
+
+
+        </section>
+    </footer>
+    <script src="js/contacto.js"></script>
+</body>
+
+</html>
