@@ -1,3 +1,7 @@
+@font-face {
+    font-family:"Cinzel";
+    src: url('../fonts/Cinzel-Regular.ttf');
+}
 * {
     margin: 0%;
     padding: 0%;
@@ -172,10 +176,15 @@ form {
 #submit {
 
     margin: 3vh 4vw;
-    border-radius: 30px;
+    border-radius: 6px;
     background-color: #A43440;
     color: #fff;
 
+}
+#submit:hover{
+    background-color: #d6d58e;
+    color: #000000;
+    border: 2px solid;
 }
 
 /* BOTON WHATSSAP */
