@@ -113,7 +113,7 @@ li:hover {
 /* VARIABLES */
 
 :root {
-    --blanco: #E0E0E0;
+    --blanco: #ffff;
     --azul-opacidad: #184463;
     --bg-menu: #003053;
     --bg-body: #C7E1FF;
@@ -155,6 +155,11 @@ li:hover {
     font-size: 20px;
     margin-left: 20px;
     /* display: none; */
+}
+.logo a {
+    text-decoration: none;
+    color: #ffff;
+
 }
 
 .togglee {
