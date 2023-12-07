@@ -115,9 +115,22 @@ li:hover {
 /**************************main******************************/
 
 .s1 {
-    display: flex;
+    display: flex;   
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
 
+}
+.titulo{
+    font-size:2vw;
+    border: 2px solid #000000;
+    background-color: #d6d58e;
+    color: #000000;
+    padding: 1vw;
+    border-radius: 30px;
+    margin-top: 3vh;
+    font-weight: bold;
 }
 
 .log-s1 {
@@ -133,6 +146,8 @@ li:hover {
 .log-s1 img {
     width: 19vw;
     padding: 4vw;
+    position: relative;
+    top:10%;
 
 }
 
@@ -147,7 +162,7 @@ li:hover {
 form {
     display: flex;
     flex-direction: column;
-    gap: 3vw;
+    gap: 2vw;
 
 
     align-items: center;
@@ -159,6 +174,16 @@ form input {
     border-radius: 3px;
     border: 1px solid;
     text-align: center;
+}
+.form-select{
+    font-size: 2vw;
+    border-radius: 3px;
+}
+form a{
+    color: #A43440;
+    font-weight: bold;
+    font-size: 1.5vw;
+
 }
 
 #submit {
@@ -471,7 +496,7 @@ hr {
     }
     #submit {
         width:25vw;
-        font-size:5vw ;
+        font-size:4vw ;
     }
 
 

@@ -1,9 +1,10 @@
-let url = "https://fakestoreapi.com/products";
+// let url = "https://fakestoreapi.com/products";
+let url = "http://127.0.0.1:5000/productos" ;
 
 
 
 
-fetch(url+"?sort=desc")
+fetch(url+"/decendiente")
     .then(res => res.json())
     .then(json => mostrarProductos(json));
 

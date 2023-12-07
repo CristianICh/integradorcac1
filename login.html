@@ -44,14 +44,15 @@
                     <img src="imagenes/pngwing.com.png" alt="">
                 </div>
                 <div class="log-s1-f">
-                    <form action="login.html" >
+                    <form >
 
                         <input type="text" name="usuario" id="usuario" placeholder="USUARIO">
 
 
                         <input type="password" name="pass" id="pass" placeholder="PASSWORD">
 
-                        <input type="submit" value="Enviar" id="submit">
+                        <input type="button" value="Iniciar Sesion" id="submit" onclick="loguearse()">
+                        <p class="">No tienes cuenta? <a href="registro.html">Registrate</a></p>
                     </form>
                 </div>
             </div>
@@ -111,6 +112,7 @@
 
         </section>
     </footer>
+    <script src="js/login.js" ></script>
 </body>
 
 </html>

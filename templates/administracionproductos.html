@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/administracionproducto.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <section>
+            <div class="menu-dashboard" id="menuDashboard">
+                <!-- TOP MENU -->
+                <div class="top-menu">
+                    <div class="logo">
+                        <img src="../imagenes/admin/logo.svg" alt="">
+                        <span>AMAPOLA </span>
+                    </div>
+                    <div class="togglee">
+                        <i class="bx bx-menu" id="toggle-img"></i>
+                    </div>
+                </div>
+                <!-- INPUT SEARCH -->
+                <div class="input-busqueda">
+                    <i class="bx bx-search" id=""></i>
+                    <input type="text" class="input" placeholder="Buscar">
+                </div>
+                <!-- MENU -->
+
+                <div class="menu" id="menu">
+
+                    <div class="enlace">
+                        <i class="bx bx-user"></i>
+                        <span>Usuarios</span>
+                    </div>
+
+                    <div class="enlace">
+                        <i class='bx bx-store'></i>
+                        <span>Productos</span>
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+
+        <div class="navegacion">
+            <header>
+                <ul id="lista">
+                    <li></li>
+                    <li class="lenguaje"><a href="#"><img src="" alt=""></a>
+                        <ul class="dropdownn" id="dropdownn">
+                            <li><a href="../index.html">Salir</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </header>
+            <main>
+                <div class="container mt-5">
+                    <a href="../templates/nuevoproducto.html" class="btn btn-success">Nuevo Producto</a>
+
+                    <div class="container-lg mb-5 mt-1 border border-black  p-0">
+                        <div id="app">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Titulo</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Descripcion</th>
+                                        <th scope="col">Categoria</th>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="producto in productos">
+                                        <td>{{producto.id}}</td>
+                                        <td>{{producto.title}}</td>
+                                        <td>{{producto.price}}</td>
+                                        <td>{{producto.description}}</td>
+                                        <td>{{producto.category}}</td>
+                                        <!-- <td>{{producto.image}}</td> -->
+                                        <td>
+                                            <img :src="producto.image" alt="">
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger"
+                                                v-on:click="eliminar(producto.id)"
+                                                style="width: 100%;">Eliminar</button>
+
+                                            <a class="boton btn btn-primary"
+                                                :href="'editarproducto.html?id='+producto.id+'&title='+producto.title+'&price='+producto.price+'&description='+producto.description+'&category='+producto.category+'&image='+producto.image"
+                                                style="width: 100%;">Editar</a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/administracion.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/tablaproductos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

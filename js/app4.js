@@ -3,7 +3,8 @@ console.log(localStorage.getItem("e"));
 let categoria = localStorage.getItem("e");
 
 
-let url = "https://fakestoreapi.com/products";
+// let url = "https://fakestoreapi.com/products";
+let url = "http://127.0.0.1:5000/productos";
 
 var mostrarxcategoria=()=>{
     return fetch(url + "/category/" + categoria)

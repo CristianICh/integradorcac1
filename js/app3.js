@@ -8,7 +8,8 @@ function categoria(e){
 }
 categoria2.addEventListener('click', categoria)
 
-let url = "https://fakestoreapi.com/products?limit=5";
+// let url = "https://fakestoreapi.com/products?limit=5";
+let url = "http://127.0.0.1:5000/productos/limite=5";
 
 fetch(url)
     .then(res => res.json())

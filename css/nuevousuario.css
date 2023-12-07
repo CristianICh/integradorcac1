@@ -1,0 +1,245 @@
+/* FONTS GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.contenedor{    
+    display: flex;
+    /* color: var(--blanco); */
+    
+}
+.menu-dashboard , header{
+    color: var(--blanco);
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+/******/
+
+
+
+header {
+    background-color: #003053;
+    min-height: 80px;
+    
+}
+
+
+#lista {
+    display: flex;
+    gap: 10px;
+    min-height: 80px;
+    justify-content: end;
+    align-items: center;
+}
+
+#lista li {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #FFFf;
+    font-size: 20px;
+    text-decoration: none;
+
+
+}
+
+.dropdownn {
+    right: 0px;
+    display: none;
+    top: 70px;
+
+}
+.table{
+    overflow-x: scroll;
+}
+
+
+
+.open {
+
+    background-color: #003053;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+
+}
+
+li:hover {
+    background: #184463;
+}
+#lista li img{
+    width: 60px;
+    padding-right: 10px;
+}
+
+/*////////////////////dashboard///////////////////////////////*/
+
+
+/* VARIABLES */
+
+:root {
+    --blanco: #E0E0E0;
+    --azul-opacidad: #184463;
+    --bg-menu: #003053;
+    --bg-body: #C7E1FF;
+}
+
+
+
+/* LAYOUT */
+
+.menu-dashboard {
+    /* max-width: 150px; */
+    max-width: 250px;
+    height: 100vh;
+    background: var(--bg-menu);
+    padding: 20px;
+    transition: max-width .3s ease;
+    height: 100vh;
+
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.top-menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    transition: width .3s ease;
+}
+
+ .logo span {
+    font-size: 20px;
+    margin-left: 20px;
+    /* display: none; */
+}
+
+ .togglee {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.togglee i {
+    font-size: 35px;
+}
+
+.input-busqueda {
+    width: 100%;
+    margin: 50px 0;
+    background-color: var(--azul-opacidad);
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+.input-busqueda i {
+    font-size: 30px;
+    margin-right: 20px;
+
+}
+
+.input-busqueda .input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    color: var(--blanco);
+    /* display: none; */
+}
+
+/*enlaces*/
+.menu .enlace {
+    width: 100%;
+    padding: 5px 0 5px 17px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+
+.menu .enlace:hover {
+    background: var(--azul-opacidad);
+
+}
+
+.menu.enlace i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.menu .enlace span {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.menu-dashboard.open {
+    max-width: 150px;
+}
+
+
+.menu-dashboard.open .top-menu .logo span {
+    display: none;
+}
+
+.menu-dashboard.open .input-busqueda .menu-dashboard.open .menu .enlace {
+    width: auto;
+}
+
+.menu-dashboard.open .input-busqueda .input {
+    display: none;
+}
+
+.menu-dashboard.open .menu .enlace {
+    padding: 10px;
+}
+
+.menu-dashboard.open .menu .enlace span {
+    opacity: 0;
+}
+
+/*******************tabla***********************/
+
+
+

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="imagenes/categorias/iconoamapola-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel&family=Jost:ital,wght@1,200&family=Ubuntu:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
-    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/registro.css">
     <title>Amapola Store</title>
 </head>
 
@@ -17,9 +17,9 @@
     <header>
         <div class="top-bar">
 
-            <span id="top-nav">OCTUBRE 10% DE DESCUENTO </span>
+            <span id="top-nav">OCTUBRE 10% DE DESCUENTO</span>
             <span id="top-nav">3 CUOTAS SIN INTERES</span>
-            
+
         </div>
         <div class="header-main">
             <a href="index.html" class="enlace">
@@ -29,7 +29,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a class="active" href="nosotros.html">Nosotros</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="login.html">Iniciar Sesion</a></li>
 
             </ul>
@@ -38,47 +38,40 @@
 
     </header>
     <main>
-        <h1>QUIENES SOMOS</h1>
-        <section class="m-s1">
+        <section class="s1">
 
+            <div class="titulo">
+                <h1>Registro</h1>
+            </div>
+            <div class="log-s1">
+                <div>
+                    <img src="imagenes/pngwing.com.png" alt="">
+                </div>
+                <div class="log-s1-f">
+                    <form>
+                        <input type="text" name="nombre" id="nombre" placeholder="NOMBRE">
+                        <input type="text" name="usuario" id="usuario" placeholder="USUARIO">
+                        <input type="password" name="contraseña" id="contraseña" placeholder="PASSWORD">
+                        <select class="form-select" id="sexo" aria-label="Default select example">
+                            <option selected value="">Sexo</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
 
-            <div class="s1">
-                <iframe width="7000" height="500" src="https://www.youtube.com/embed/YCIuEU2y8XI?si=HqwhNUUJAe-5rVtv "
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                <span>Somos un grupo de trabajadores que comenzó como un pequeño emprendimiento de venta de ropa mayorista en el año 2014. Con el correr de los años, después de un gran crecimiento, nos abrirnos paso en el rubro hasta que estrenamos nuestro propio taller.
-
-                    Desde ahí, fabricamos, elegimos y distribuimos a todo el país. Actualmente, contamos con una base de mas de 530 emprendedores, entre los cuales se encuentran minoristas, showrooms y locales de todo el país que nos compran mensualmente y están muy felices con los productos que recibieron. </span>
+                        <input type="button" value="Registrarse" id="submit" onclick="nuevoUsuario()">
+                        <p class="">Ya tienes cuenta? <a href="login.html">Iniciar Sesion</a></p>
+                    </form>
+                </div>
             </div>
         </section>
-        <section class="m-s2">
 
-            <div class="s2-staaf">
-                <img src="imagenes/perfil.png" alt="">
-                <p>Candelaria</p>
-                <p>Comision 23528</p>
-            </div>
-            <div class="s2-staaf">
-                <img src="imagenes/hombre.png" alt="">
-                <p>criss</p>
-                <p>Comision 23528</p>
-            </div>
-            <div class="s2-staaf">
-                <img src="imagenes/perfil.png" alt="">
-                <p>sabri</p>
-                <p>Comision 23528</p>
-            </div>
-            <div class="s2-staaf">
-                <img src="imagenes/hombre.png" alt="">
-                <p>val</p>
-                <p>Comision 23528</p>
-            </div>
 
-        </section>
-        <h1></h1>
+
         <a href="" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
     </main>
+
+
+    <!-- <img src="imagenes/jpyas2.jpg" alt=""> -->
     <footer>
         <section class="f-s1">
             <div id="f-nav">
@@ -126,7 +119,7 @@
 
         </section>
     </footer>
-
+    <script src="js/registro.js"></script>
 </body>
 
 </html>
