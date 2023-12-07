@@ -2,7 +2,8 @@
 
 var id = localStorage.getItem("id");
 console.log(id);
-let url = "http://127.0.0.1:5000/producto";
+// let url = "http://127.0.0.1:5000/producto";
+let url = "https://spikecarp.pythonanywhere.com/producto";
 fetch(url + "/" + id)
     .then(res => res.json())
     

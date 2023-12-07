@@ -82,7 +82,8 @@ const modificar = () => {
 
     }
 
-    let url = "http://127.0.0.1:5000/updateusuario/" + idForm;
+    // let url = "http://127.0.0.1:5000/updateusuario/" + idForm;
+    let url = "https://spikecarp.pythonanywhere.com/updateusuario/" + idForm;
     var options = {
         body: JSON.stringify(usuario),
         method: 'PUT',

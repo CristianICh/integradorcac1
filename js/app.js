@@ -1,7 +1,7 @@
 // let url = "https://fakestoreapi.com/products";
-let url = "http://127.0.0.1:5000/productos" ;
+// let url = "http://127.0.0.1:5000/productos" ;
 
-
+let url = "https://spikecarp.pythonanywhere.com/productos"
 
 
 fetch(url+"/decendiente")

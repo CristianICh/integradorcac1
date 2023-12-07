@@ -56,12 +56,12 @@ document.getElementById('titulo').value = resultado.title;
 document.getElementById('descripcion').value = resultado.description;
 document.getElementById('categoria').value = resultado.category;
 document.getElementById('imagen').value = resultado.image;
- console.log(resultado.id);
+console.log(resultado.id);
 
 const modificar = () => {
     // let idForm = document.getElementById('id').value;
     let idForm = resultado.id;
-    
+
     let tituloForm = document.getElementById('titulo').value;
     let precioForm = document.getElementById('precio').value;
     let descripcionForm = document.getElementById('descripcion').value;
@@ -81,7 +81,8 @@ const modificar = () => {
 
     }
 
-    let url = "http://127.0.0.1:5000/update/" + idForm;
+    // let url = "http://127.0.0.1:5000/update/" + idForm;
+    let url = "https://spikecarp.pythonanywhere.com/update/" + idForm;
     var options = {
         body: JSON.stringify(producto),
         method: 'PUT',
@@ -91,13 +92,13 @@ const modificar = () => {
         redirect: 'follow'
     }
     fetch(url, options)
-        .then(function(){
+        .then(function () {
             console.log("modificado");
             alert("Registro Modificado");
 
-            window.location.href="administracionproductos.html";
+            window.location.href = "administracionproductos.html";
         })
-        .catch(err=>{
+        .catch(err => {
             console.error(err);
             alert('Error al modificar')
         })

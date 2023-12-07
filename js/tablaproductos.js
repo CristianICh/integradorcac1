@@ -3,7 +3,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            url: "http://127.0.0.1:5000/productos",
+            // url: "http://127.0.0.1:5000/productos",
+            url: "https://spikecarp.pythonanywhere.com/productos",
             productos: [],
             error: false,
             cargando: true
@@ -30,7 +31,8 @@ createApp({
         },
         // el id se necesita para buscar en la DB y eliminarlo
         eliminar(id) {
-            const url = 'http://localhost:5000/borrar/' + id;
+            // const url = 'http://localhost:5000/borrar/' + id;
+            const url = 'https://spikecarp.pythonanywhere.com/borrar/' + id;
             var options = {
                 method: 'DELETE',
             }

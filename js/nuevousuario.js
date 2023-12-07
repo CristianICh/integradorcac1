@@ -56,7 +56,8 @@ function nuevo() {
 
     console.log(usuario);
 
-    let url = "http://127.0.0.1:5000/registrousuario";
+    // let url = "http://127.0.0.1:5000/registrousuario";
+    let url = "https://spikecarp.pythonanywhere.com/registrousuario";
 
     var options = {
         body: JSON.stringify(usuario),
