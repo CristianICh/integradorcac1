@@ -52,6 +52,7 @@ header {
 #lista li {
     padding: 10px;
     border-radius: 8px;
+    font-size: 1.7vw;
 }
 
 ul {
@@ -67,10 +68,15 @@ a {
 }
 
 .dropdownn {
-    right: 0px;
+    right: 2px;
     display: none;
-    top: 70px;
+    top: 75px;
 
+
+}
+.dropdownn a{
+    color: #ffff;
+    text-decoration: none;
 }
 .table{
     overflow-x: scroll;

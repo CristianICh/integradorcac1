@@ -32,7 +32,7 @@ function loguearse() {
            
 
 
-            window.location.href = "templates/administracionproductos.html";
+            window.location.href = "templates/bienvenidos.html";
         })
         .catch(err => {
             //this.errored = true

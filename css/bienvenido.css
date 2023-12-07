@@ -245,7 +245,17 @@ li:hover {
     opacity: 0;
 }
 
-/*******************tabla***********************/
+/*******************main***********************/
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main img{
+    width: 45vw;
+}
 
 
 
