@@ -178,6 +178,7 @@ li:hover {
     border-radius: 8px;
     display: flex;
     align-items: center;
+    visibility: hidden;
 
 }
 
@@ -213,6 +214,9 @@ li:hover {
 .menu .enlace:hover {
     background: var(--azul-opacidad);
 
+}
+.menu #active{
+    background: var(--azul-opacidad);
 }
 
 .menu.enlace i {

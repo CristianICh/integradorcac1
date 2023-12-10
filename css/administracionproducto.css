@@ -212,6 +212,9 @@ li:hover {
     background: var(--azul-opacidad);
 
 }
+.menu #active{
+    background: var(--azul-opacidad);
+}
 
 .menu.enlace i {
     margin-right: 20px;

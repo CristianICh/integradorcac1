@@ -210,6 +210,9 @@ li:hover {
     background: var(--azul-opacidad);
 
 }
+.menu #active{
+    background: var(--azul-opacidad);
+}
 
 .menu.enlace i {
     margin-right: 20px;
@@ -221,7 +224,7 @@ li:hover {
     transition: opacity .3s ease;
 }
 
-.menu-dashboard.open {
+.menu-dashboard .open {
     max-width: 150px;
 }
 
