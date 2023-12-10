@@ -117,11 +117,12 @@ li:hover {
 .menu-dashboard {
     /* max-width: 150px; */
     max-width: 250px;
-    height: 100vh;
+    
     background: var(--bg-menu);
     padding: 20px;
     transition: max-width .3s ease;
-    height: 100vh;
+    height: 100%;
+    
 
 }
 
@@ -174,6 +175,7 @@ li:hover {
     border-radius: 8px;
     display: flex;
     align-items: center;
+    
 
 }
 

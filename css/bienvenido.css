@@ -184,12 +184,14 @@ li:hover {
     border-radius: 8px;
     display: flex;
     align-items: center;
+   
 
 }
 
 .input-busqueda i {
     font-size: 30px;
     margin-right: 20px;
+    
 
 }
 
