@@ -25,6 +25,7 @@ const mostrarProductos = (json) => {
 
     for (let i = 0; i < json.length; i++) {
         // card+=`<img src="${json[i].image}">`
+        let coutas=(json[i].price/3).toFixed(2);
         card += ` 
         <div class="card">
         <a href="descripcionproducto.html">
@@ -33,7 +34,7 @@ const mostrarProductos = (json) => {
          <div class="desc">
              <h4>${json[i].title}</h4>
              <h5>$${json[i].price}</h5>
-             <h6>3 cuotas sin interes de $16.99
+             <h6>3 cuotas sin interes de $ ${coutas}
          </div>
         </div> 
         `
