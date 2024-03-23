@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
           var fila = arrayfilas[i];
   
           // Buscar por nombre, en la posición en la celda 1       
-          var nombreInTable = fila.getElementsByTagName('td')[1].textContent.toLowerCase();
+          var nombreInTable = fila.getElementsByTagName('td')[0].textContent.toLowerCase();
   
           // si es mayor a -1 no existe en la tabla.
           var nombreEncontrado = nombreInTable.indexOf(nombre) > -1;

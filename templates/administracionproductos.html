@@ -7,8 +7,8 @@
     <link rel="shorcut icon" href="../imagenes/categorias/iconoamapola-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/administracionproducto.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <title>Amapola</title>
 </head>
 
@@ -44,7 +44,7 @@
                         <i class='bx bx-store'></i>
                         <span>Productos</span>
                     </div>
-                  
+
                 </div>
             </div>
         </section>
@@ -62,10 +62,10 @@
 
             </header>
             <main>
-                <div class="container mt-5">
+                <!-- <div class="container mt-5">
                     <a href="../templates/nuevoproducto.html" class="btn btn-success">Nuevo Producto</a>
 
-                    <div class="container-lg mb-5 mt-1 border border-black  p-0">
+                    <div class="container-lg mb-5 mt-1 border border-black  p-0 table-container">
                         <div id="app">
                             <table class="table table-striped table-hover" id="tableproductos">
                                 <thead>
@@ -86,7 +86,7 @@
                                         <td>{{producto.price}}</td>
                                         <td>{{producto.description}}</td>
                                         <td>{{producto.category}}</td>
-                                        <!-- <td>{{producto.image}}</td> -->
+                                        
                                         <td>
                                             <img :src="producto.image" alt="">
                                         </td>
@@ -106,7 +106,43 @@
                         </div>
                     </div>
 
+                </div> -->
+
+                <h1>Productos</h1>
+                <div class="table-container">
+                    <div id="app">
+                        <table class="table-rwd" id="tableproductos">
+                            <tr>
+                                
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+
+                            <tr v-for="producto in productos">
+                                
+                                <td>{{producto.title}}</td>
+                                <td>{{producto.price}}</td>
+                                <td>{{producto.description}}</td>
+                                <td>{{producto.category}}</td>
+
+                                <td>
+                                    <img :src="producto.image" alt="">
+                                </td>
+                                <td id="acciones">
+                                    <button type="button" class="boton beliminar" v-on:click="eliminar(producto.id)">Eliminar</button>
+
+                                    <a class="boton beditar" :href="'editarproducto.html?id='+producto.id+'&title='+producto.title+'&price='+producto.price+'&description='+producto.description+'&category='+producto.category+'&image='+producto.image">Editar</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
+
+
             </main>
         </div>
     </div>

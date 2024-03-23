@@ -22,6 +22,7 @@ createApp({
                 .then(response => response.json())
                 .then(data => {
                     this.productos = data;
+                    console.log(productos);
                     this.cargando = false
                 })
                 .catch(err => {

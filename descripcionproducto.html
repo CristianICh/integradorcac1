@@ -8,8 +8,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel&family=Jost:ital,wght@1,200&family=Ubuntu:wght@500&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/producto.css">
+    <link rel="stylesheet" href="css/modal.css">
     <title>Amapola Store</title>
 </head>
 
@@ -18,7 +19,7 @@
         <div class="top-bar">
             <span id="top-nav">OCTUBRE 10% DE DESCUENTO </span>
             <span id="top-nav">3 CUOTAS SIN INTERES</span>
-            
+
         </div>
         <div class="header-main">
             <a href="index.html" class="enlace">
@@ -30,6 +31,7 @@
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="#"><img src="imagenes/carrito-de-compras.png" alt=""></a></li>
 
             </ul>
         </div>
@@ -53,7 +55,7 @@
                     <h5></h5>
                     <h6 id="cuotas">3 Cuotas sin Interes de $512</h6>
                     <h6 id="cuotas">12 Cuotas fijas $109</h6>
-                    
+
 
                     <div id="d-ih4">
                         <img src="imagenes/envio-gratis.png" alt="" id="i-envio">
@@ -69,20 +71,26 @@
                     </div>
 
                     <div id="d-aa">
-                        <a href="" id="botonC">COMPRAR AHORA</a>
+                        <a href="#" id="botonC">COMPRAR AHORA</a>
                         <a href="" id="botonA">AGREGAR CARRITO</a>
                     </div>
                 </div>
-                
+
             </div>
             <div id="i-desc">
                 <h3>Descripcion</h3>
-                <h3 id="h3-desc">Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday"</h3>
+                <h3 id="h3-desc">Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15
+                    inches) in the padded sleeve, your everyday"</h3>
 
 
             </div>
-            
+
         </section>
+        <!--MODAL-->
+        <div id="modal-container" class="modal-container">
+            
+        </div>
+        <a href="" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
     </main>
     <footer>
         <section class="f-s1">
@@ -114,7 +122,7 @@
             <h4 id="navega-contacta-mediosP-envio">Medios de Pago</h4>
             <img id="f-s3-i" src="imagenes/tarjetasCredito/mastercard@2x.png" alt="">
             <img id="f-s3-i" src="imagenes/tarjetasCredito/visa@2x.png" alt="">
-            <img  id="f-s3-i"src="imagenes/tarjetasCredito/banelco@2x.png" alt="">
+            <img id="f-s3-i" src="imagenes/tarjetasCredito/banelco@2x.png" alt="">
             <img id="f-s3-i" src="imagenes/tarjetasCredito/cabal@2x.png" alt="">
             <img id="f-s3-i" src="imagenes/tarjetasCredito/cencosud@2x.png" alt="">
             <img id="f-s3-i" src="imagenes/tarjetasCredito/mercadopago@2x.png" alt="">
@@ -123,16 +131,17 @@
             <img id="f-s3-i" src="imagenes/tarjetasCredito/tarjeta-naranja@2x.png" alt="">
             <img id="f-s3-i" src="imagenes/tarjetasCredito/tarjeta-shopping@2x.png" alt="">
             <hr>
-            <h4 id="navega-contacta-mediosP-envio">Medios de Envio</h4> 
+            <h4 id="navega-contacta-mediosP-envio">Medios de Envio</h4>
             <img src="imagenes/tarjetasCredito/3336-es_AR-small-andreani logo andreani.png" alt="" id="f-s3-i">
 
-            <img src="imagenes/tarjetasCredito/1200x630wa.png" alt=""id="f-s3-i" >
+            <img src="imagenes/tarjetasCredito/1200x630wa.png" alt="" id="f-s3-i">
 
-            
+
         </section>
     </footer>
-   
+
     <script src="js/app2.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 
 </html>
