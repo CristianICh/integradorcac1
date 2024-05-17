@@ -133,6 +133,7 @@ header {
 a img {
     width: 20vw;
     height: 45vh;
+    object-fit: cover;
 }
 
 .card:hover {

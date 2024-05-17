@@ -148,6 +148,7 @@ header {
 .img-class {
     width: 15vw;
     height: 30vh;
+    object-fit: cover;
 }
 
 

@@ -131,6 +131,9 @@ li:hover {
     /* border: 1.5px solid #1b1d1b1e; */
     /* transition: transform 0.1s ease-in-out; */
 }
+.card img{
+    object-fit: cover;
+}
 
 main {
 

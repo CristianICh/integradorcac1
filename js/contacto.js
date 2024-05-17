@@ -36,6 +36,7 @@ function validarFormulario() {
     }
     // Si todas las validaciones son exitosas, enviar el formulario
     alert("Se enviaron los datos correctamente.")
+   
 
 
 
